@@ -25,3 +25,22 @@ const clone = JSON.parse(JSON.stringify(obj))
 console.log(obj)
 console.log(clone)
 console.log(obj == clone);
+
+
+
+let calculator = {
+  sum() {
+    this.a + this.b
+  },
+  mul() {
+    this.a * this.b
+  },
+  read() {
+    this.a = prompt(`a?`, ``)
+    this.b = prompt(`b?`, ``)
+  }
+}
+
+calculator.read()
+console.log(calculator.sum());
+console.log(calculator.mul());
